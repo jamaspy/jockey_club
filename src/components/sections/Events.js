@@ -12,9 +12,9 @@ import Eight from "../../images/8.png";
 const Events = () => {
   return (
     <div className="h-screen flex flex-col">
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col xl:flex-row">
         <div className="">
-          <img src={Event} />
+          <img style={{ objectFit: "cover" }} src={Event} />
         </div>
         <div
           className="flex justify-center items-center flex-col"
@@ -49,32 +49,30 @@ const Events = () => {
           </a>
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-4">
-        <div className="flex">
+      <div className="flex flex-row flex-wrap">
+        <div className="w-1/3">
           <img src={Seven} />
         </div>
-        <div className="flex">
+        <div className="w-1/3">
           <img src={Five} />
         </div>
-        <div className="flex">
+        <div className="w-1/3">
           <img src={Six} />
         </div>
-        <div className="flex">
+        <div className="w-1/3">
           <img src={Four} />
         </div>
-        <div className="flex">
+        <div className="w-1/3">
           <img src={Two} />
         </div>
-        <div className="flex">
+        <div className="w-1/3">
           <img src={Three} />
         </div>
-        <div className="flex">
-          <img src={Event} />
-        </div>
-        <div className="flex">
+
+        <div className="w-1/2 flex justify-center items-center">
           <img src={Eight} />
         </div>
-        <div className="flex">
+        <div className="w-1/2 flex justify-center items-center">
           <img src={One} />
         </div>
       </div>
